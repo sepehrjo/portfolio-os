@@ -1,0 +1,44 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+.dev.vars
+.dev.vars.local
+
+# Secrets
+*.key
+*.pem
+*.p8
+
+# Build outputs
+dist/
+.next/
+build/
+*.tsbuildinfo
+out/
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+bun.lock
+pnpm-lock.yaml
+
+# Development
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local development
+.wrangler/
+.tanstack/
+dev-server.log
+dev
+
+# Runtime
+.cache/
+*.log
