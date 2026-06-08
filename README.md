@@ -22,7 +22,7 @@ The skills section showing the tech stack.
 The contact section with a message form.
 
 ![Admin](public/screenshots/admin.png)
-The admin dashboard view without login.
+The admin dashboard view.
 
 Stack
 
