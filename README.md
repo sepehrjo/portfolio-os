@@ -6,8 +6,8 @@ A portfolio site built with TanStack Start, React, TypeScript, and Tailwind CSS,
 
 ## Screenshots
 
-![Home](public/screenshots/home.png)
-The full home page of the portfolio site.
+![Home](public/screenshots/chatbot.png)
+The chatbot functionality in site.
 
 ![Hero](public/screenshots/hero.png)
 The hero section with headline, availability status, and stat counters.
@@ -20,9 +20,6 @@ The skills section showing the tech stack.
 
 ![Contact](public/screenshots/contact.png)
 The contact section with a message form.
-
-![Mobile](public/screenshots/mobile.png)
-The mobile layout of the home page.
 
 ![Admin](public/screenshots/admin.png)
 The admin dashboard view without login.
