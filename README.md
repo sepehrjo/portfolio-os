@@ -1,6 +1,31 @@
-portfolio-os
+# portfolio-os
+
+Live Demo: https://sep-web.pages.dev
 
 A portfolio site built with TanStack Start, React, TypeScript, and Tailwind CSS, deployed on Cloudflare Pages. The codebase includes multilingual support (English, Armenian, Persian), animated components with Framer Motion, and a contact form with email notifications.
+
+## Screenshots
+
+![Home](public/screenshots/home.png)
+The full home page of the portfolio site.
+
+![Hero](public/screenshots/hero.png)
+The hero section with headline, availability status, and stat counters.
+
+![Projects](public/screenshots/projects.png)
+The projects section showing the portfolio works.
+
+![Skills](public/screenshots/skills.png)
+The skills section showing the tech stack.
+
+![Contact](public/screenshots/contact.png)
+The contact section with a message form.
+
+![Mobile](public/screenshots/mobile.png)
+The mobile layout of the home page.
+
+![Admin](public/screenshots/admin.png)
+The admin dashboard view without login.
 
 Stack
 
