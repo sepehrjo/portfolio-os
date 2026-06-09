@@ -23,13 +23,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Sepehr — full-stack developer in Yerevan. Ship faster, pay less, no middlemen. Senior-level Next.js, React, Three.js and AI integrations for agencies and businesses.",
+          "Full-stack development partner for digital agencies in Yerevan. Senior-level Next.js, React, Three.js and AI integrations — white-label, fixed scope, fast delivery.",
       },
       { property: "og:title", content: "Sepehr — Full-Stack Developer · Yerevan" },
       {
         property: "og:description",
         content:
-          "One developer who handles design to deployment. Direct communication, fixed pricing, demos in days.",
+          "White-label development partner for agencies. One developer, fixed scope, demo in days. Based in Yerevan.",
       },
     ],
     scripts: [

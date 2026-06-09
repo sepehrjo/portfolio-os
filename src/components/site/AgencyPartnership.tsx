@@ -20,6 +20,9 @@ export function AgencyPartnership() {
           <div className="font-mono-ui text-sm text-accent">{t('agency.label')}</div>
           <h2 className="font-display mt-4 text-4xl font-bold md:text-5xl">{t('agency.heading')}</h2>
           <p className="mt-4 max-w-2xl text-base text-text-secondary md:text-lg">{t('agency.sub')}</p>
+          <p className="mt-6 max-w-3xl text-base text-text-secondary md:text-lg">
+            I work exclusively as a white-label development partner — I don't pitch clients directly, I don't build competing agency relationships, and I don't appear in your client's inbox. Your relationship stays yours. My job is to make your delivery reliable, fast, and technically excellent so you can take on more work with confidence.
+          </p>
         </motion.div>
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
