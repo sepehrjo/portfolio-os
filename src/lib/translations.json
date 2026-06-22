@@ -35,7 +35,31 @@
       "description": "One developer who handles everything — from design to deployment. Direct communication, honest pricing, and results that speak louder than promises.",
       "status": "Available for new projects",
       "cta1": "See My Work →",
-      "cta2": "Get in Touch"
+      "cta2": "Get in Touch",
+      "stats": [
+        {
+          "value": 3,
+          "suffix": "",
+          "label": "projects shipped"
+        },
+        {
+          "value": 180,
+          "prefix": "<",
+          "suffix": "ms",
+          "label": "page load"
+        },
+        {
+          "value": 99.9,
+          "decimals": 1,
+          "suffix": "%",
+          "label": "uptime"
+        },
+        {
+          "value": 3,
+          "suffix": "",
+          "label": "languages"
+        }
+      ]
     },
     "services": {
       "label": "// what i build",
@@ -397,7 +421,31 @@
       "description": "Մեկ full-stack ծրագրավորիչ, ով կատարում է ամեն ինչ — դիզայնից մինչև տեղակայում։ Ուղղակի կոմունիկացիա, շատ մրցակցային գինը և արդյունքներ, որ շատ ավելի շատ են խոսում, քան խոստումները։",
       "status": "Հասանելի նոր նախագծերի համար",
       "cta1": "Տեսեք իմ աշխատանքը →",
-      "cta2": "Կապ հաստատել"
+      "cta2": "Կապ հաստատել",
+      "stats": [
+        {
+          "value": 3,
+          "suffix": "",
+          "label": "ավարտված նախագիծ"
+        },
+        {
+          "value": 180,
+          "prefix": "<",
+          "suffix": "ms",
+          "label": "էջի բեռնում"
+        },
+        {
+          "value": 99.9,
+          "decimals": 1,
+          "suffix": "%",
+          "label": "հասանելիություն"
+        },
+        {
+          "value": 3,
+          "suffix": "",
+          "label": "լեզու"
+        }
+      ]
     },
     "services": {
       "label": "// ինչ ես ստեղծում",
@@ -759,7 +807,31 @@
       "description": "یک توسعه‌دهنده تمام‌کاره که همه‌چیز را انجام می‌دهد — از طراحی تا استقرار. ارتباط مستقیم، قیمت‌گذاری صادقانه، و نتایجی که بسیار بیشتر از وعده‌ها حرف می‌زند.",
       "status": "برای پروژه‌های جدید در دسترس",
       "cta1": "کارهایم را ببینید ←",
-      "cta2": "تماس بگیرید"
+      "cta2": "تماس بگیرید",
+      "stats": [
+        {
+          "value": 3,
+          "suffix": "",
+          "label": "پروژه تحویل‌شده"
+        },
+        {
+          "value": 180,
+          "prefix": "<",
+          "suffix": "ms",
+          "label": "بارگذاری صفحه"
+        },
+        {
+          "value": 99.9,
+          "decimals": 1,
+          "suffix": "%",
+          "label": "در دسترس بودن"
+        },
+        {
+          "value": 3,
+          "suffix": "",
+          "label": "زبان"
+        }
+      ]
     },
     "services": {
       "label": "// آنچه من می‌سازم",
