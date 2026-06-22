@@ -176,8 +176,8 @@
     },
     "about": {
       "label": "// who i am",
-      "title": "Digital Craftsman",
-      "description": "I started as a designer, became a developer, and now I do both. That background shapes everything I build — interfaces that don't just work, but feel right.",
+      "title": "Ai & Full Stack Developer",
+      "description": "I started as a Ai Engineer, became a full stack developer, and now I do both. That background shapes everything I build — interfaces that don't just work, but feel right.",
       "points": [
         "Direct communication, no project manager markup",
         "Design and development under one roof",
@@ -185,10 +185,10 @@
         "Your budget is safe: you approve the scope before we start"
       ],
       "focus": [
-        "Full-stack implementation from Figma or spec",
+        "Full-stack implementation",
         "3D WebGL interfaces (Three.js + React Three Fiber)",
         "Practical AI integration backed by genuine ML understanding",
-        "Multi-language deployment: EN, HY, RU, FA, DE, FR"
+        "Multi-language deployment: EN, HY, RU, FA, DE, FR, ..."
       ],
       "sidebar": [
         [
