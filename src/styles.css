@@ -10,6 +10,7 @@
   --color-bg-card: var(--bg-card);
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
+  --color-accent-foreground: var(--accent-foreground);
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
   --color-text-tertiary: var(--text-tertiary);
@@ -21,26 +22,31 @@
   --color-card: var(--bg-card);
   --color-card-foreground: var(--text-primary);
   --color-primary: var(--accent);
-  --color-primary-foreground: var(--text-primary);
+  --color-primary-foreground: var(--accent-foreground);
   --color-muted: var(--bg-card);
   --color-muted-foreground: var(--text-secondary);
 
-  --font-display: "Syne", sans-serif;
-  --font-sans: "DM Sans", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
+  /* Engineered Editorial type system */
+  --font-display: "Geist", sans-serif;
+  --font-sans: "Geist", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+  --font-serif: "Instrument Serif", serif;
 }
 
 :root {
-  --bg: #0F1015;
-  --bg-card: #141620;
-  --accent: #2E86AB;
-  --accent-glow: rgba(46, 134, 171, 0.25);
-  --accent-hover: #3A9AC4;
-  --text-primary: #F0F0F0;
-  --text-secondary: #A0A4B0;
-  --text-tertiary: #606470;
-  --border: rgba(255, 255, 255, 0.07);
-  --border-hover: rgba(46, 134, 171, 0.35);
+  /* Engineered Editorial — near-black canvas, single warm amber accent.
+     All values in OKLCH; neutrals carry the design, amber is the only accent. */
+  --bg: oklch(0.16 0.006 256);          /* page background (near-black, blue) */
+  --bg-card: oklch(0.19 0.007 256);     /* card / panel surfaces */
+  --accent: oklch(0.82 0.14 78);        /* amber accent (CTAs, highlights, links) */
+  --accent-hover: oklch(0.86 0.13 80);  /* amber hover */
+  --accent-foreground: oklch(0.2 0.03 70); /* dark text on amber surfaces */
+  --accent-glow: transparent;           /* glow removed — hairline borders carry hover */
+  --text-primary: oklch(0.96 0.004 250);   /* off-white primary text */
+  --text-secondary: oklch(0.66 0.01 256);  /* secondary / caption text */
+  --text-tertiary: oklch(0.52 0.01 256);   /* tertiary / muted labels */
+  --border: oklch(1 0 0 / 9%);             /* hairline borders */
+  --border-hover: oklch(0.82 0.14 78 / 35%); /* amber hairline on hover */
 }
 
 @layer base {
@@ -53,12 +59,12 @@
   body {
     background-color: var(--bg);
     color: var(--text-primary);
-    font-family: "DM Sans", sans-serif;
+    font-family: "Geist", sans-serif;
     -webkit-font-smoothing: antialiased;
     cursor: none;
   }
   h1, h2, h3, h4 {
-    font-family: "Syne", sans-serif;
+    font-family: "Geist", sans-serif;
     letter-spacing: -0.02em;
   }
   @media (max-width: 768px) {
@@ -67,15 +73,22 @@
 }
 
 @utility font-display {
-  font-family: "Syne", sans-serif;
+  font-family: "Geist", sans-serif;
 }
 @utility font-mono-ui {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Geist Mono", monospace;
 }
 
 @utility dot-grid {
   background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
   background-size: 24px 24px;
+}
+
+@utility hairline-grid {
+  background-image:
+    linear-gradient(to right, var(--border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+  background-size: 64px 64px;
 }
 
 @keyframes blink {
@@ -92,4 +105,22 @@
 }
 @utility pulse-dot {
   animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@utility marquee {
+  animation: marquee 38s linear infinite;
+}
+
+/* Accessibility: respect reduced-motion for all looping/large CSS motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
 }

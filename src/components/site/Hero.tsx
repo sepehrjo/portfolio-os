@@ -35,7 +35,7 @@ export function Hero() {
           <br />
           {t('hero.heading2')}
           <br />
-          <span className="text-accent">{t('hero.heading3')}</span>
+          <span className="font-serif italic text-accent">{t('hero.heading3')}</span>
         </motion.h1>
 
         <motion.p
@@ -56,8 +56,8 @@ export function Hero() {
           className="mt-8 inline-flex items-center gap-3 rounded-full border border-[var(--border)] bg-bg-card/60 px-4 py-2"
         >
           <span className="relative flex h-2 w-2">
-            <span className="absolute inset-0 animate-ping rounded-full bg-green-400 opacity-75" />
-            <span className="relative h-2 w-2 rounded-full bg-green-400" />
+            <span className="absolute inset-0 animate-ping rounded-full bg-accent opacity-75" />
+            <span className="relative h-2 w-2 rounded-full bg-accent" />
           </span>
           <span className="text-sm text-text-secondary">{t('hero.status')}</span>
         </motion.div>
@@ -71,7 +71,7 @@ export function Hero() {
         >
           <MagneticButton
             onClick={() => scrollTo("#work")}
-            className="rounded-md bg-accent px-6 py-3 text-sm font-medium text-white shadow-[0_0_24px_var(--accent-glow)] transition-colors hover:bg-accent-hover"
+            className="rounded-md bg-accent px-6 py-3 text-sm font-medium text-bg transition-colors hover:bg-accent-hover"
           >
             {t('hero.cta1')}
           </MagneticButton>

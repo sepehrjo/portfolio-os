@@ -48,7 +48,7 @@ export function Chatbot() {
         transition={{ delay: 1.5, duration: 0.3 }}
         aria-expanded={isOpen}
         aria-label={isOpen ? `${t('chatbot.label')} (close)` : `${t('chatbot.label')} (open)`}
-        className="fixed bottom-6 right-6 z-50 flex h-12 items-center gap-2 rounded-full bg-accent px-5 text-sm font-medium text-white shadow-[0_0_24px_var(--accent-glow)] transition-colors hover:bg-accent-hover focus:outline-none focus:ring-2 focus:ring-accent"
+        className="fixed bottom-6 right-6 z-50 flex h-12 items-center gap-2 rounded-full bg-accent px-5 text-sm font-medium text-bg transition-colors hover:bg-accent-hover focus:outline-none focus:ring-2 focus:ring-accent"
       >
         {isOpen ? <X size={16} /> : <MessageSquare size={16} />}
         <span className="hidden sm:inline">{isOpen ? t('chatbot.close') : t('chatbot.label')}</span>
@@ -102,7 +102,7 @@ export function Chatbot() {
                 <div className="pt-2">
                   <button
                     onClick={prefillContactForm}
-                    className="w-full rounded-md border border-accent text-accent px-3 py-2.5 text-xs font-mono-ui transition-colors hover:bg-accent hover:text-white"
+                    className="w-full rounded-md border border-accent text-accent px-3 py-2.5 text-xs font-mono-ui transition-colors hover:bg-accent hover:text-bg"
                   >
                     {t('chatbot.fillFormCTA')}
                   </button>
@@ -127,7 +127,7 @@ export function Chatbot() {
               <button
                 type="submit"
                 disabled={isLoading || !inputValue.trim()}
-                className="h-[38px] rounded-md bg-accent px-3.5 py-2 text-xs font-mono-ui text-white transition-colors hover:bg-accent-hover disabled:opacity-40"
+                className="h-[38px] rounded-md bg-accent px-3.5 py-2 text-xs font-mono-ui text-bg transition-colors hover:bg-accent-hover disabled:opacity-40"
               >
                 {t('chatbot.send')}
               </button>

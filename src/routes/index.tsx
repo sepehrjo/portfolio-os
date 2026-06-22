@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { MotionConfig } from "framer-motion";
 import { Nav } from "@/components/site/Nav";
 import { Hero } from "@/components/site/Hero";
 import { ValueStrip } from "@/components/site/ValueStrip";
@@ -68,6 +69,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
+    <MotionConfig reducedMotion="user">
     <div className="relative bg-bg text-text-primary">
       <CustomCursor />
       <ScrollProgress />
@@ -88,5 +90,6 @@ function Index() {
       <Footer />
       <Chatbot />
     </div>
+    </MotionConfig>
   );
 }

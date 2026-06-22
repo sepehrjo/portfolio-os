@@ -233,7 +233,7 @@ export function Contact() {
               <MagneticButton
                 type="submit"
                 disabled={status === "submitting"}
-                className="w-full rounded-md bg-accent px-6 py-3 text-center text-sm font-medium text-white shadow-[0_0_24px_var(--accent-glow)] transition-colors hover:bg-accent-hover disabled:opacity-50 disabled:cursor-not-allowed block"
+                className="w-full rounded-md bg-accent px-6 py-3 text-center text-sm font-medium text-bg transition-colors hover:bg-accent-hover disabled:opacity-50 disabled:cursor-not-allowed block"
               >
                 {status === "submitting" ? (
                   <span className="flex items-center justify-center gap-2">

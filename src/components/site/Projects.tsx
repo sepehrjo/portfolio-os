@@ -31,12 +31,12 @@ function BrowserChrome({ url }: { url: string }) {
 
 function LiveBadge() {
   return (
-    <div className="absolute right-4 top-4 z-10 flex items-center gap-2 rounded-full border border-green-400/30 bg-black/60 px-3 py-1 backdrop-blur">
+    <div className="absolute right-4 top-4 z-10 flex items-center gap-2 rounded-full border border-accent/30 bg-black/60 px-3 py-1 backdrop-blur">
       <span className="relative flex h-2 w-2">
-        <span className="absolute inset-0 animate-ping rounded-full bg-green-400 opacity-75" />
-        <span className="relative h-2 w-2 rounded-full bg-green-400" />
+        <span className="absolute inset-0 animate-ping rounded-full bg-accent opacity-75" />
+        <span className="relative h-2 w-2 rounded-full bg-accent" />
       </span>
-      <span className="font-mono-ui text-xs font-semibold tracking-wider text-green-400">LIVE</span>
+      <span className="font-mono-ui text-xs font-semibold tracking-wider text-accent">LIVE</span>
     </div>
   );
 }
@@ -184,7 +184,7 @@ export function Projects() {
                         href={p.demo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 rounded-md bg-accent px-4 py-2 text-sm text-white shadow-[0_0_16px_var(--accent-glow)] transition-colors hover:bg-accent-hover"
+                        className="inline-flex items-center gap-2 rounded-md bg-accent px-4 py-2 text-sm text-bg transition-colors hover:bg-accent-hover"
                       >
                         <ExternalLink size={16} /> {t('projects.liveDemo')}
                       </a>
