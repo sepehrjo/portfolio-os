@@ -4,9 +4,37 @@ const D1_DATABASE_ID = "0fab311a-138f-48e3-a581-d451d4da2258";
 const D1_ACCOUNT_ID = process.env.CLOUDFLARE_ACCOUNT_ID || "";
 const D1_TOKEN = process.env.CLOUDFLARE_API_TOKEN || "";
 
-// Placeholder / "coming soon" showcase cards removed — only the two real projects
-// (Ariana Global Trade, FORMA Studio) are shown.
-const EXTRA_PROJECTS: never[] = [];
+// Appended to whatever the DB / fallback returns (after Ariana + FORMA).
+// The "coming soon" placeholder cards were removed; this keeps the one real
+// in-progress project. `stats` drives the editorial stat row directly.
+const EXTRA_PROJECTS = [
+  {
+    url: "app.ai-outreach.dev",
+    bgClass: "bg-gradient-to-br from-[#1f1a12] via-[#15110a] to-[#0d0a06]",
+    centerText: "AI Outreach System",
+    category: "Full-Stack · AI · Automation",
+    title: "AI Outreach System — Automated Freelance Lead Gen",
+    description:
+      "This is an automated cold outreach assistant designed for freelance full-stack development services. It takes a company name and their website, researches what they do, and drafts a personalised cold email that you can review and send.",
+    highlights: [
+      "Input a company name and website to begin",
+      "Automatically researches what the company does",
+      "Drafts a personalised cold email tailored to each prospect",
+      "Human-in-the-loop: review and edit before sending",
+    ],
+    tags: ["Next.js", "TypeScript", "OpenAI API", "Node.js", "Automation"],
+    github: "",
+    demo: "",
+    stats: [
+      { value: "2 inputs", label: "name + website" },
+      { value: "AI", label: "drafted emails" },
+      { value: "100%", label: "human-reviewed" },
+    ],
+    screenshots: [
+      { src: "/assets/outreach-sample.svg", alt: "AI Outreach System — sample interface" },
+    ],
+  },
+];
 
 export const Route = createFileRoute("/api/projects/")({
   server: {
