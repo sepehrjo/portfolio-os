@@ -171,24 +171,35 @@ export function Projects() {
                       ))}
                     </div>
 
-                    <div className="mt-8 flex flex-wrap gap-3">
-                      <a
-                        href={p.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 rounded-md border border-[var(--border)] bg-bg-card px-4 py-2 text-sm transition-colors hover:border-[var(--border-hover)] hover:text-accent"
-                      >
-                        <Github size={16} /> {t('projects.github')}
-                      </a>
-                      <a
-                        href={p.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 rounded-md bg-accent px-4 py-2 text-sm text-bg transition-colors hover:bg-accent-hover"
-                      >
-                        <ExternalLink size={16} /> {t('projects.liveDemo')}
-                      </a>
-                    </div>
+                    {(() => {
+                      const hasGithub = p.github && p.github !== "#";
+                      const hasDemo = p.demo && p.demo !== "#";
+                      if (!hasGithub && !hasDemo) return null;
+                      return (
+                        <div className="mt-8 flex flex-wrap gap-3">
+                          {hasGithub && (
+                            <a
+                              href={p.github}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-2 rounded-md border border-[var(--border)] bg-bg-card px-4 py-2 text-sm transition-colors hover:border-[var(--border-hover)] hover:text-accent"
+                            >
+                              <Github size={16} /> {t('projects.github')}
+                            </a>
+                          )}
+                          {hasDemo && (
+                            <a
+                              href={p.demo}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-2 rounded-md bg-accent px-4 py-2 text-sm text-bg transition-colors hover:bg-accent-hover"
+                            >
+                              <ExternalLink size={16} /> {t('projects.liveDemo')}
+                            </a>
+                          )}
+                        </div>
+                      );
+                    })()}
                   </div>
                 </div>
               </TiltCard>

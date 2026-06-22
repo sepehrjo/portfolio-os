@@ -4,6 +4,59 @@ const D1_DATABASE_ID = "0fab311a-138f-48e3-a581-d451d4da2258";
 const D1_ACCOUNT_ID = process.env.CLOUDFLARE_ACCOUNT_ID || "";
 const D1_TOKEN = process.env.CLOUDFLARE_API_TOKEN || "";
 
+// Additional showcase projects appended to whatever the DB / fallback returns.
+// Empty `screenshots` renders the framed centerText placeholder (no broken images),
+// and empty github/demo hide the action buttons (no dead links).
+const EXTRA_PROJECTS = [
+  {
+    url: "preview coming soon",
+    bgClass: "bg-gradient-to-br from-[#1f1a12] via-[#15110a] to-[#0d0a06]",
+    centerText: "AI Cold Outreach Assistant",
+    category: "Full-Stack · AI · Automation",
+    title: "Cold Outreach Assistant — Automated Freelance Lead Gen",
+    description:
+      "This is an automated cold outreach assistant designed for freelance full-stack development services. It takes a company name and their website, researches what they do, and drafts a personalized cold email that you can review and send.",
+    highlights: [
+      "Input a company name and website to begin",
+      "Automatically researches what the company does",
+      "Drafts a personalized cold email tailored to each prospect",
+      "Human-in-the-loop: review and edit before sending",
+    ],
+    tags: ["Next.js", "TypeScript", "OpenAI API", "Node.js", "Automation"],
+    github: "",
+    demo: "",
+    screenshots: [] as { src: string; alt: string }[],
+  },
+  {
+    url: "coming soon",
+    bgClass: "bg-gradient-to-br from-[#1a2030] via-[#0f1520] to-[#0a0e18]",
+    centerText: "Coming Soon",
+    category: "New Project",
+    title: "Showcase Project 02 — Coming Soon",
+    description:
+      "A new showcase project is on the way. Details, screenshots, and a live demo will be added here soon.",
+    highlights: [] as string[],
+    tags: [] as string[],
+    github: "",
+    demo: "",
+    screenshots: [] as { src: string; alt: string }[],
+  },
+  {
+    url: "coming soon",
+    bgClass: "bg-gradient-to-br from-[#1a2030] via-[#0f1520] to-[#0a0e18]",
+    centerText: "Coming Soon",
+    category: "New Project",
+    title: "Showcase Project 03 — Coming Soon",
+    description:
+      "A new showcase project is on the way. Details, screenshots, and a live demo will be added here soon.",
+    highlights: [] as string[],
+    tags: [] as string[],
+    github: "",
+    demo: "",
+    screenshots: [] as { src: string; alt: string }[],
+  },
+];
+
 export const Route = createFileRoute("/api/projects/")({
   server: {
     handlers: {
@@ -34,7 +87,7 @@ export const Route = createFileRoute("/api/projects/")({
                 screenshots: p.screenshots,
               }));
 
-              return new Response(JSON.stringify(transformed), {
+              return new Response(JSON.stringify([...transformed, ...EXTRA_PROJECTS]), {
                 status: 200,
                 headers: { "Content-Type": "application/json" },
               });
@@ -92,7 +145,7 @@ export const Route = createFileRoute("/api/projects/")({
             }
           ];
 
-          return new Response(JSON.stringify(hardcodedProjects), {
+          return new Response(JSON.stringify([...hardcodedProjects, ...EXTRA_PROJECTS]), {
             status: 200,
             headers: { "Content-Type": "application/json" },
           });

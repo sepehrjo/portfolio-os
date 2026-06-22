@@ -39,6 +39,12 @@ export function About() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="rounded-xl border border-[var(--border)] bg-bg-card p-6"
           >
+            <img
+              src="/assets/founder.png"
+              alt="Sepehr Jokanian — full-stack developer, Yerevan"
+              loading="lazy"
+              className="mb-6 aspect-[4/5] w-full rounded-lg border border-[var(--border)] object-cover grayscale transition-all duration-500 hover:grayscale-0"
+            />
             <div className="font-mono-ui text-xs uppercase tracking-wider text-accent">// snapshot</div>
             <dl className="mt-5 divide-y divide-[var(--border)]">
               {sidebar.map((pair: any) => (
