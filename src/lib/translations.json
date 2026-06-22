@@ -2,11 +2,26 @@
   "en": {
     "nav": {
       "links": [
-        { "label": "Work", "href": "#work" },
-        { "label": "Skills", "href": "#skills" },
-        { "label": "Process", "href": "#process" },
-        { "label": "About", "href": "#about" },
-        { "label": "Contact", "href": "#contact" }
+        {
+          "label": "Work",
+          "href": "#work"
+        },
+        {
+          "label": "Skills",
+          "href": "#skills"
+        },
+        {
+          "label": "Process",
+          "href": "#process"
+        },
+        {
+          "label": "About",
+          "href": "#about"
+        },
+        {
+          "label": "Contact",
+          "href": "#contact"
+        }
       ],
       "cta": "Make a Request →",
       "logoLabel": "sepehr",
@@ -17,7 +32,7 @@
       "heading1": "Ship faster.",
       "heading2": "Pay less.",
       "heading3": "No overhead.",
-      "description": "One full-stack developer who handles everything — from design to deployment. Direct communication, honest pricing, and results that speak louder than promises. The development partner agencies trust to deliver.",
+      "description": "One developer who handles everything — from design to deployment. Direct communication, honest pricing, and results that speak louder than promises.",
       "status": "Available for new projects",
       "cta1": "See My Work →",
       "cta2": "Get in Touch"
@@ -45,12 +60,68 @@
       "label": "// tech stack",
       "title": "I Work With",
       "groups": [
-        { "label": "Frontend", "items": ["React","Next.js","TypeScript","Tailwind CSS","Framer Motion","HTML/CSS","Vite"] },
-        { "label": "3D & Visual", "items": ["Three.js","@react-three/fiber","@react-three/drei","CSS Modules"] },
-        { "label": "Backend & API", "items": ["Node.js","REST APIs","Next.js Server Actions","Zod","PostgreSQL"] },
-        { "label": "AI & Automation", "items": ["OpenAI API","LLM Integration","Zapier","Make","Webhooks"] },
-        { "label": "Internationalisation", "items": ["i18next","react-i18next","RTL/LTR Layouts","Persian","Armenian","Russian"] },
-        { "label": "Deploy & Tools", "items": ["Vercel","GitHub","Git","Figma","Docker"] }
+        {
+          "label": "Frontend",
+          "items": [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Framer Motion",
+            "HTML/CSS",
+            "Vite"
+          ]
+        },
+        {
+          "label": "3D & Visual",
+          "items": [
+            "Three.js",
+            "@react-three/fiber",
+            "@react-three/drei",
+            "CSS Modules"
+          ]
+        },
+        {
+          "label": "Backend & API",
+          "items": [
+            "Node.js",
+            "REST APIs",
+            "Next.js Server Actions",
+            "Zod",
+            "PostgreSQL"
+          ]
+        },
+        {
+          "label": "AI & Automation",
+          "items": [
+            "OpenAI API",
+            "LLM Integration",
+            "Zapier",
+            "Make",
+            "Webhooks"
+          ]
+        },
+        {
+          "label": "Internationalisation",
+          "items": [
+            "i18next",
+            "react-i18next",
+            "RTL/LTR Layouts",
+            "Persian",
+            "Armenian",
+            "Russian"
+          ]
+        },
+        {
+          "label": "Deploy & Tools",
+          "items": [
+            "Vercel",
+            "GitHub",
+            "Git",
+            "Figma",
+            "Docker"
+          ]
+        }
       ]
     },
     "process": {
@@ -96,12 +167,30 @@
         "Multi-language deployment: EN, HY, RU, FA, DE, FR"
       ],
       "sidebar": [
-        ["Based in","Yerevan, Armenia 🇦🇲"],
-        ["Availability","Open to new work"],
-        ["Response","Within 24 hours"],
-        ["Timezone","GMT+4 (Armenia Standard)"],
-        ["Degree","B.Sc. Artificial Intelligence"],
-        ["Languages","English · Armenian · Farsi"]
+        [
+          "Based in",
+          "Yerevan, Armenia 🇦🇲"
+        ],
+        [
+          "Availability",
+          "Open to new work"
+        ],
+        [
+          "Response",
+          "Within 24 hours"
+        ],
+        [
+          "Timezone",
+          "GMT+4 (Armenia Standard)"
+        ],
+        [
+          "Degree",
+          "B.Sc. Artificial Intelligence"
+        ],
+        [
+          "Languages",
+          "English · Armenian · Farsi"
+        ]
       ]
     },
     "contact": {
@@ -118,11 +207,26 @@
         "sending": "Sending..."
       },
       "budgetOptions": [
-        { "value": "under_100", "label": "Under $100" },
-        { "value": "100_300", "label": "$100 – $300" },
-        { "value": "300_500", "label": "$300 – $500" },
-        { "value": "500_1000", "label": "$500 – $1,000" },
-        { "value": "over_1000", "label": "Over $1,000" }
+        {
+          "value": "under_100",
+          "label": "Under $100"
+        },
+        {
+          "value": "100_300",
+          "label": "$100 – $300"
+        },
+        {
+          "value": "300_500",
+          "label": "$300 – $500"
+        },
+        {
+          "value": "500_1000",
+          "label": "$500 – $1,000"
+        },
+        {
+          "value": "over_1000",
+          "label": "Over $1,000"
+        }
       ],
       "successMessage": "Message sent! I'll get back to you within 24 hours.",
       "budgetPlaceholder": "Not sure yet",
@@ -161,7 +265,8 @@
       "subtitle": "These aren't mockups. Click the links — they actually load.",
       "loading": "Loading projects...",
       "github": "GitHub",
-      "liveDemo": "Live Demo"
+      "liveDemo": "Live Demo",
+      "viewCaseStudy": "View case study"
     },
     "whyMe": {
       "label": "// value proposition",
@@ -188,21 +293,48 @@
       ]
     },
     "valueStrip": {
-      "stat1": { "label": "Days to Prototype", "sub": "Working build, not a mockup" },
-      "stat2": { "label": "Response Time", "sub": "You are never left waiting" },
-      "stat3": { "label": "Minimum Engagement", "sub": "Fixed scope, no surprises" }
+      "stat1": {
+        "label": "Days to Prototype",
+        "sub": "Working build, not a mockup"
+      },
+      "stat2": {
+        "label": "Response Time",
+        "sub": "You are never left waiting"
+      },
+      "stat3": {
+        "label": "Minimum Engagement",
+        "sub": "Fixed scope, no surprises"
+      }
     },
     "multilingual": {
       "label": "// multilingual delivery",
       "title": "Production sites shipped in 5+ languages.",
       "description": "SEO-optimised per market. Full localisation — copy, currency, legal. Including complex right-to-left (RTL) layout engines with sub-180ms page-load transitions.",
       "languages": [
-        { "code": "EN", "name": "English" },
-        { "code": "HY", "name": "Armenian" },
-        { "code": "RU", "name": "Russian" },
-        { "code": "FA", "name": "Persian" },
-        { "code": "DE", "name": "German" },
-        { "code": "FR", "name": "French" }
+        {
+          "code": "EN",
+          "name": "English"
+        },
+        {
+          "code": "HY",
+          "name": "Armenian"
+        },
+        {
+          "code": "RU",
+          "name": "Russian"
+        },
+        {
+          "code": "FA",
+          "name": "Persian"
+        },
+        {
+          "code": "DE",
+          "name": "German"
+        },
+        {
+          "code": "FR",
+          "name": "French"
+        }
       ]
     },
     "agency": {
@@ -232,11 +364,26 @@
   "hy": {
     "nav": {
       "links": [
-        { "label": "Աշխատանք", "href": "#work" },
-        { "label": "Հմտություններ", "href": "#skills" },
-        { "label": "Գործընթաց", "href": "#process" },
-        { "label": "Իմ մասին", "href": "#about" },
-        { "label": "Կոնտակտ", "href": "#contact" }
+        {
+          "label": "Աշխատանք",
+          "href": "#work"
+        },
+        {
+          "label": "Հմտություններ",
+          "href": "#skills"
+        },
+        {
+          "label": "Գործընթաց",
+          "href": "#process"
+        },
+        {
+          "label": "Իմ մասին",
+          "href": "#about"
+        },
+        {
+          "label": "Կոնտակտ",
+          "href": "#contact"
+        }
       ],
       "cta": "Պահանջ ներկայացնել →",
       "logoLabel": "Սեպեր",
@@ -275,12 +422,68 @@
       "label": "// տեխնոլոգիական հավաք",
       "title": "Ես աշխատում եմ հետ",
       "groups": [
-        { "label": "Frontend", "items": ["React","Next.js","TypeScript","Tailwind CSS","Framer Motion","HTML/CSS","Vite"] },
-        { "label": "3D & Visual", "items": ["Three.js","@react-three/fiber","@react-three/drei","CSS Modules"] },
-        { "label": "Backend & API", "items": ["Node.js","REST APIs","Next.js Server Actions","Zod","PostgreSQL"] },
-        { "label": "AI & Automation", "items": ["OpenAI API","LLM Integration","Zapier","Make","Webhooks"] },
-        { "label": "Internationalisation", "items": ["i18next","react-i18next","RTL/LTR Layouts","Persian","Armenian","Russian"] },
-        { "label": "Deploy & Tools", "items": ["Vercel","GitHub","Git","Figma","Docker"] }
+        {
+          "label": "Frontend",
+          "items": [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Framer Motion",
+            "HTML/CSS",
+            "Vite"
+          ]
+        },
+        {
+          "label": "3D & Visual",
+          "items": [
+            "Three.js",
+            "@react-three/fiber",
+            "@react-three/drei",
+            "CSS Modules"
+          ]
+        },
+        {
+          "label": "Backend & API",
+          "items": [
+            "Node.js",
+            "REST APIs",
+            "Next.js Server Actions",
+            "Zod",
+            "PostgreSQL"
+          ]
+        },
+        {
+          "label": "AI & Automation",
+          "items": [
+            "OpenAI API",
+            "LLM Integration",
+            "Zapier",
+            "Make",
+            "Webhooks"
+          ]
+        },
+        {
+          "label": "Internationalisation",
+          "items": [
+            "i18next",
+            "react-i18next",
+            "RTL/LTR Layouts",
+            "Persian",
+            "Armenian",
+            "Russian"
+          ]
+        },
+        {
+          "label": "Deploy & Tools",
+          "items": [
+            "Vercel",
+            "GitHub",
+            "Git",
+            "Figma",
+            "Docker"
+          ]
+        }
       ]
     },
     "process": {
@@ -326,12 +529,30 @@
         "Multi-language deployment: EN, HY, RU, FA, DE, FR"
       ],
       "sidebar": [
-        ["Based in","Yerevan, Armenia 🇦🇲"],
-        ["Availability","Open to new work"],
-        ["Response","Within 24 hours"],
-        ["Timezone","GMT+4 (Armenia Standard)"],
-        ["Degree","B.Sc. Artificial Intelligence"],
-        ["Languages","English · Armenian · Farsi"]
+        [
+          "Based in",
+          "Yerevan, Armenia 🇦🇲"
+        ],
+        [
+          "Availability",
+          "Open to new work"
+        ],
+        [
+          "Response",
+          "Within 24 hours"
+        ],
+        [
+          "Timezone",
+          "GMT+4 (Armenia Standard)"
+        ],
+        [
+          "Degree",
+          "B.Sc. Artificial Intelligence"
+        ],
+        [
+          "Languages",
+          "English · Armenian · Farsi"
+        ]
       ]
     },
     "contact": {
@@ -348,11 +569,26 @@
         "sending": "Ուղարկվում է..."
       },
       "budgetOptions": [
-        { "value": "under_100", "label": "100 դոլարից պակաս" },
-        { "value": "100_300", "label": "$100 – $300" },
-        { "value": "300_500", "label": "$300 – $500" },
-        { "value": "500_1000", "label": "$500 – $1,000" },
-        { "value": "over_1000", "label": "1000 դոլարից ավելի" }
+        {
+          "value": "under_100",
+          "label": "100 դոլարից պակաս"
+        },
+        {
+          "value": "100_300",
+          "label": "$100 – $300"
+        },
+        {
+          "value": "300_500",
+          "label": "$300 – $500"
+        },
+        {
+          "value": "500_1000",
+          "label": "$500 – $1,000"
+        },
+        {
+          "value": "over_1000",
+          "label": "1000 դոլարից ավելի"
+        }
       ],
       "successMessage": "Հաղորդագրությունը ուղարկվել է: Ես կպատասխանեմ 24 ժամվա ընթացքում:",
       "budgetPlaceholder": "Դեռ հայտնի չէ",
@@ -391,7 +627,8 @@
       "subtitle": "Սրանք մակետներ չեն։ Սեղմեք հղումները — դրանք իսկապես բեռնվում են։",
       "loading": "Նախագծերը բեռնվում են...",
       "github": "GitHub",
-      "liveDemo": "Կենդանի դեմո"
+      "liveDemo": "Կենդանի դեմո",
+      "viewCaseStudy": "Դիտել ուսումնասիրությունը"
     },
     "whyMe": {
       "label": "// արժեքի առաջարկ",
@@ -418,21 +655,48 @@
       ]
     },
     "valueStrip": {
-      "stat1": { "label": "Օր մինչև նախատիպ", "sub": "Աշխատող կառուցվածք, ոչ թե մակետ" },
-      "stat2": { "label": "Պատասխանի ժամկետ", "sub": "Դուք երբեք սպասման մեջ չեք մնում" },
-      "stat3": { "label": "Նվազագույն ներգրավում", "sub": "Հաստատուն շրջանակ, անակնկալներ չկան" }
+      "stat1": {
+        "label": "Օր մինչև նախատիպ",
+        "sub": "Աշխատող կառուցվածք, ոչ թե մակետ"
+      },
+      "stat2": {
+        "label": "Պատասխանի ժամկետ",
+        "sub": "Դուք երբեք սպասման մեջ չեք մնում"
+      },
+      "stat3": {
+        "label": "Նվազագույն ներգրավում",
+        "sub": "Հաստատուն շրջանակ, անակնկալներ չկան"
+      }
     },
     "multilingual": {
       "label": "// բազմալեզու մատուցում",
       "title": "Արտադրական կայքեր 5+ լեզուներով։",
       "description": "SEO-օպտիմիզացված ըստ շուկայի։ Լիարժեք տեղայնացում — տեքստ, արժույթ, իրավական։ Ներառյալ բարդ աջից-ձախ (RTL) դասավորության շարժիչներ՝ 180ms-ից արագ էջի բեռնմամբ։",
       "languages": [
-        { "code": "EN", "name": "Անգլերեն" },
-        { "code": "HY", "name": "Հայերեն" },
-        { "code": "RU", "name": "Ռուսերեն" },
-        { "code": "FA", "name": "Պարսկերեն" },
-        { "code": "DE", "name": "Գերմաներեն" },
-        { "code": "FR", "name": "Ֆրանսերեն" }
+        {
+          "code": "EN",
+          "name": "Անգլերեն"
+        },
+        {
+          "code": "HY",
+          "name": "Հայերեն"
+        },
+        {
+          "code": "RU",
+          "name": "Ռուսերեն"
+        },
+        {
+          "code": "FA",
+          "name": "Պարսկերեն"
+        },
+        {
+          "code": "DE",
+          "name": "Գերմաներեն"
+        },
+        {
+          "code": "FR",
+          "name": "Ֆրանսերեն"
+        }
       ]
     },
     "agency": {
@@ -462,11 +726,26 @@
   "fa": {
     "nav": {
       "links": [
-        { "label": "کار", "href": "#work" },
-        { "label": "مهارت‌ها", "href": "#skills" },
-        { "label": "فرآیند", "href": "#process" },
-        { "label": "درباره", "href": "#about" },
-        { "label": "تماس", "href": "#contact" }
+        {
+          "label": "کار",
+          "href": "#work"
+        },
+        {
+          "label": "مهارت‌ها",
+          "href": "#skills"
+        },
+        {
+          "label": "فرآیند",
+          "href": "#process"
+        },
+        {
+          "label": "درباره",
+          "href": "#about"
+        },
+        {
+          "label": "تماس",
+          "href": "#contact"
+        }
       ],
       "cta": "درخواست ارسال کنید ←",
       "logoLabel": "سپهر",
@@ -505,12 +784,68 @@
       "label": "// مجموعه تکنولوژی",
       "title": "من با این‌ها کار می‌کنم",
       "groups": [
-        { "label": "Frontend", "items": ["React","Next.js","TypeScript","Tailwind CSS","Framer Motion","HTML/CSS","Vite"] },
-        { "label": "3D & Visual", "items": ["Three.js","@react-three/fiber","@react-three/drei","CSS Modules"] },
-        { "label": "Backend & API", "items": ["Node.js","REST APIs","Next.js Server Actions","Zod","PostgreSQL"] },
-        { "label": "AI & Automation", "items": ["OpenAI API","LLM Integration","Zapier","Make","Webhooks"] },
-        { "label": "Internationalisation", "items": ["i18next","react-i18next","RTL/LTR Layouts","Persian","Armenian","Russian"] },
-        { "label": "Deploy & Tools", "items": ["Vercel","GitHub","Git","Figma","Docker"] }
+        {
+          "label": "Frontend",
+          "items": [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Framer Motion",
+            "HTML/CSS",
+            "Vite"
+          ]
+        },
+        {
+          "label": "3D & Visual",
+          "items": [
+            "Three.js",
+            "@react-three/fiber",
+            "@react-three/drei",
+            "CSS Modules"
+          ]
+        },
+        {
+          "label": "Backend & API",
+          "items": [
+            "Node.js",
+            "REST APIs",
+            "Next.js Server Actions",
+            "Zod",
+            "PostgreSQL"
+          ]
+        },
+        {
+          "label": "AI & Automation",
+          "items": [
+            "OpenAI API",
+            "LLM Integration",
+            "Zapier",
+            "Make",
+            "Webhooks"
+          ]
+        },
+        {
+          "label": "Internationalisation",
+          "items": [
+            "i18next",
+            "react-i18next",
+            "RTL/LTR Layouts",
+            "Persian",
+            "Armenian",
+            "Russian"
+          ]
+        },
+        {
+          "label": "Deploy & Tools",
+          "items": [
+            "Vercel",
+            "GitHub",
+            "Git",
+            "Figma",
+            "Docker"
+          ]
+        }
       ]
     },
     "process": {
@@ -556,12 +891,30 @@
         "Multi-language deployment: EN, HY, RU, FA, DE, FR"
       ],
       "sidebar": [
-        ["Based in","Yerevan, Armenia 🇦🇲"],
-        ["Availability","Open to new work"],
-        ["Response","Within 24 hours"],
-        ["Timezone","GMT+4 (Armenia Standard)"],
-        ["Degree","B.Sc. Artificial Intelligence"],
-        ["Languages","English · Armenian · Farsi"]
+        [
+          "Based in",
+          "Yerevan, Armenia 🇦🇲"
+        ],
+        [
+          "Availability",
+          "Open to new work"
+        ],
+        [
+          "Response",
+          "Within 24 hours"
+        ],
+        [
+          "Timezone",
+          "GMT+4 (Armenia Standard)"
+        ],
+        [
+          "Degree",
+          "B.Sc. Artificial Intelligence"
+        ],
+        [
+          "Languages",
+          "English · Armenian · Farsi"
+        ]
       ]
     },
     "contact": {
@@ -578,11 +931,26 @@
         "sending": "درحال ارسال..."
       },
       "budgetOptions": [
-        { "value": "under_100", "label": "کمتر از $100" },
-        { "value": "100_300", "label": "$100 – $300" },
-        { "value": "300_500", "label": "$300 – $500" },
-        { "value": "500_1000", "label": "$500 – $1,000" },
-        { "value": "over_1000", "label": "بیش از $1,000" }
+        {
+          "value": "under_100",
+          "label": "کمتر از $100"
+        },
+        {
+          "value": "100_300",
+          "label": "$100 – $300"
+        },
+        {
+          "value": "300_500",
+          "label": "$300 – $500"
+        },
+        {
+          "value": "500_1000",
+          "label": "$500 – $1,000"
+        },
+        {
+          "value": "over_1000",
+          "label": "بیش از $1,000"
+        }
       ],
       "successMessage": "پیام ارسال شد! من در ظرف ۲۴ ساعت پاسخ خواهم داد.",
       "budgetPlaceholder": "هنوز مطمئن نیستم",
@@ -621,7 +989,8 @@
       "subtitle": "این‌ها ماکت نیستند. روی لینک‌ها کلیک کنید — واقعاً بارگذاری می‌شوند.",
       "loading": "در حال بارگذاری پروژه‌ها...",
       "github": "GitHub",
-      "liveDemo": "دموی زنده"
+      "liveDemo": "دموی زنده",
+      "viewCaseStudy": "مطالعه موردی را ببینید"
     },
     "whyMe": {
       "label": "// ارزش پیشنهادی",
@@ -648,21 +1017,48 @@
       ]
     },
     "valueStrip": {
-      "stat1": { "label": "روز تا نمونه اولیه", "sub": "ساخت کاربردی، نه ماکت" },
-      "stat2": { "label": "زمان پاسخ‌گویی", "sub": "هرگز در انتظار نمی‌مانید" },
-      "stat3": { "label": "حداقل قرارداد", "sub": "دامنه ثابت، بدون غافلگیری" }
+      "stat1": {
+        "label": "روز تا نمونه اولیه",
+        "sub": "ساخت کاربردی، نه ماکت"
+      },
+      "stat2": {
+        "label": "زمان پاسخ‌گویی",
+        "sub": "هرگز در انتظار نمی‌مانید"
+      },
+      "stat3": {
+        "label": "حداقل قرارداد",
+        "sub": "دامنه ثابت، بدون غافلگیری"
+      }
     },
     "multilingual": {
       "label": "// ارائه چندزبانه",
       "title": "سایت‌های تولیدی در بیش از ۵ زبان.",
       "description": "بهینه‌سازی SEO برای هر بازار. بومی‌سازی کامل — متن، ارز، حقوقی. شامل موتورهای پیچیده چیدمان راست‌به‌چپ (RTL) با گذار بارگذاری صفحه کمتر از ۱۸۰ms.",
       "languages": [
-        { "code": "EN", "name": "انگلیسی" },
-        { "code": "HY", "name": "ارمنی" },
-        { "code": "RU", "name": "روسی" },
-        { "code": "FA", "name": "فارسی" },
-        { "code": "DE", "name": "آلمانی" },
-        { "code": "FR", "name": "فرانسوی" }
+        {
+          "code": "EN",
+          "name": "انگلیسی"
+        },
+        {
+          "code": "HY",
+          "name": "ارمنی"
+        },
+        {
+          "code": "RU",
+          "name": "روسی"
+        },
+        {
+          "code": "FA",
+          "name": "فارسی"
+        },
+        {
+          "code": "DE",
+          "name": "آلمانی"
+        },
+        {
+          "code": "FR",
+          "name": "فرانسوی"
+        }
       ]
     },
     "agency": {

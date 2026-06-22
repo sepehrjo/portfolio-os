@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import type { ReactNode } from "react";
 import { HeroParticles } from "./HeroParticles";
 import { Typewriter } from "./Typewriter";
 import { MagneticButton } from "./MagneticButton";
@@ -8,6 +9,39 @@ const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
 } as const;
+
+/**
+ * Renders the hero description with editorial accents:
+ *  - the word "everything" is emphasized in primary text
+ *  - the closing clause "results that speak louder than promises" is set in italic serif
+ * Falls back to plain text for non-English copy that doesn't contain the markers.
+ */
+function HeroDescription({ text }: { text: string }) {
+  const emph = "everything";
+  const italic = "results that speak louder than promises";
+
+  const renderEmph = (s: string, base: string): ReactNode[] => {
+    const i = s.indexOf(emph);
+    if (i < 0) return [s];
+    return [
+      s.slice(0, i),
+      <span key={base} className="font-medium text-text-primary">{emph}</span>,
+      s.slice(i + emph.length),
+    ];
+  };
+
+  const i = text.indexOf(italic);
+  if (i < 0) return <>{text}</>;
+  const head = text.slice(0, i);
+  const tail = text.slice(i + italic.length);
+  return (
+    <>
+      {renderEmph(head, "emph")}
+      <span className="font-serif italic text-text-primary">{italic}</span>
+      {tail}
+    </>
+  );
+}
 
 export function Hero() {
   const { t } = useTranslation();
@@ -29,13 +63,13 @@ export function Hero() {
           initial="hidden"
           animate="show"
           transition={{ delay: 0.4 }}
-          className="font-display mt-6 text-5xl font-bold leading-[0.95] tracking-tight md:text-7xl"
+          className="font-display mt-6 text-6xl font-extrabold leading-[0.9] tracking-[-0.03em] md:text-8xl"
         >
           {t('hero.heading1')}
           <br />
           {t('hero.heading2')}
           <br />
-          <span className="font-serif italic text-accent">{t('hero.heading3')}</span>
+          <span className="text-accent">{t('hero.heading3')}</span>
         </motion.h1>
 
         <motion.p
@@ -43,9 +77,9 @@ export function Hero() {
           initial="hidden"
           animate="show"
           transition={{ delay: 0.6 }}
-          className="mt-8 max-w-[580px] text-lg text-text-secondary md:text-xl"
+          className="mt-8 max-w-[580px] text-lg leading-relaxed text-text-secondary md:text-xl"
         >
-          {t('hero.description')}
+          <HeroDescription text={t('hero.description')} />
         </motion.p>
 
         <motion.div
