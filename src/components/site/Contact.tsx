@@ -64,7 +64,7 @@ export function Contact() {
       email: formData.email.trim(),
       company: formData.company.trim() || undefined,
       project: formData.message.trim(),
-      budget: formData.budget || undefined,
+      budget: formData.budget,
     };
 
     try {
