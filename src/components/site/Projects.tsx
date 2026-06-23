@@ -60,6 +60,7 @@ function statsFor(p: Project): Stat[] {
 
 function ProjectRow({ p, index }: { p: Project; index: number }) {
   const { t } = useTranslation();
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   // Tag pills come from the category, split on the middot separator.
   const pills = p.category.split("·").map((s) => s.trim()).filter(Boolean);
@@ -70,13 +71,22 @@ function ProjectRow({ p, index }: { p: Project; index: number }) {
   const titleRest = restParts.join("—").trim();
 
   const stats = statsFor(p);
-  const img = p.screenshots && p.screenshots.length > 0 ? p.screenshots[0] : null;
+  const screenshots = p.screenshots && p.screenshots.length > 0 ? p.screenshots : [];
 
   const caseHref =
     p.demo && p.demo !== "#" ? p.demo : p.github && p.github !== "#" ? p.github : null;
 
   // Alternate image/text sides on desktop (even = image left, odd = image right).
   const imageRight = index % 2 === 1;
+
+  // Auto-advance carousel
+  useEffect(() => {
+    if (screenshots.length <= 1) return;
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % screenshots.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [screenshots.length]);
 
   return (
     <motion.div
@@ -86,18 +96,45 @@ function ProjectRow({ p, index }: { p: Project; index: number }) {
       transition={{ duration: 0.6 }}
       className="grid items-center gap-10 md:grid-cols-2 md:gap-16"
     >
-      {/* Image — single framed screenshot, fitted to the browser mockup */}
+      {/* Image — carousel with browser frame */}
       <div className={imageRight ? "md:order-2" : "md:order-1"}>
         <div className="overflow-hidden rounded-xl border border-[var(--border)] bg-bg-card transition-colors duration-300 hover:border-[var(--border-hover)]">
           <BrowserChrome url={p.url} />
           <div className="relative aspect-[16/11] w-full overflow-hidden">
-            {img ? (
-              <img
-                src={img.src}
-                alt={img.alt}
-                loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover object-top"
-              />
+            {screenshots.length > 0 ? (
+              <>
+                {screenshots.map((img, i) => (
+                  <motion.img
+                    key={img.src}
+                    src={img.src}
+                    alt={img.alt}
+                    loading="lazy"
+                    initial={false}
+                    animate={{
+                      opacity: i === currentSlide ? 1 : 0,
+                      scale: i === currentSlide ? 1 : 1.05,
+                    }}
+                    transition={{ duration: 0.7, ease: "easeInOut" }}
+                    className="absolute inset-0 h-full w-full object-cover object-top"
+                  />
+                ))}
+                {screenshots.length > 1 && (
+                  <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 gap-2">
+                    {screenshots.map((_, i) => (
+                      <button
+                        key={i}
+                        onClick={() => setCurrentSlide(i)}
+                        className={`h-2 rounded-full transition-all ${
+                          i === currentSlide
+                            ? "w-8 bg-accent"
+                            : "w-2 bg-text-tertiary/40 hover:bg-text-tertiary/60"
+                        }`}
+                        aria-label={`Go to slide ${i + 1}`}
+                      />
+                    ))}
+                  </div>
+                )}
+              </>
             ) : (
               <div className={`flex h-full w-full items-center justify-center ${p.bgClass}`}>
                 <div className="absolute inset-0 dot-grid opacity-[0.06]" />

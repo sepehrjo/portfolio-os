@@ -31,7 +31,9 @@ const EXTRA_PROJECTS = [
       { value: "100%", label: "human-reviewed" },
     ],
     screenshots: [
-      { src: "/assets/outreach-sample.svg", alt: "AI Outreach System — sample interface" },
+      { src: "/assets/submit.png", alt: "AI Outreach — Submit company details" },
+      { src: "/assets/review.png", alt: "AI Outreach — Review generated email" },
+      { src: "/assets/sent.png", alt: "AI Outreach — Email sent confirmation" },
     ],
   },
 ];
@@ -94,10 +96,9 @@ export const Route = createFileRoute("/api/projects/")({
               github: "https://github.com/sepehrjo/ariana-b2b-export",
               demo: "https://arianasepehr.vercel.app",
               screenshots: [
-                { src: "/assets/preview-en.png", alt: "Ariana homepage" },
                 { src: "/assets/languages-support.png", alt: "Multi-language support" },
-                { src: "/assets/chatbot-sensitivity.png", alt: "AI chatbot" },
-                { src: "/assets/quote-inquiry.png", alt: "Quote form" }
+                { src: "/assets/quote-inquiry.png", alt: "Quote form" },
+                { src: "/assets/chatbot-sensitivity.png", alt: "AI chatbot" }
               ]
             },
             {
@@ -117,9 +118,9 @@ export const Route = createFileRoute("/api/projects/")({
               demo: "https://adart-alpha.vercel.app",
               screenshots: [
                 { src: "/assets/hero_en.png", alt: "FORMA hero" },
-                { src: "/assets/portfolio.png", alt: "FORMA portfolio" },
+                { src: "/assets/assistant_active.png", alt: "FORMA assistant" },
                 { src: "/assets/journal.png", alt: "FORMA journal" },
-                { src: "/assets/contact.png", alt: "FORMA contact" }
+                { src: "/assets/portfolio.png", alt: "FORMA portfolio" }
               ]
             }
           ];

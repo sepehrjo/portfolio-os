@@ -40,7 +40,7 @@ export function About() {
             className="rounded-xl border border-[var(--border)] bg-bg-card p-6"
           >
             <img
-              src="/assets/founder.png"
+              src="/assets/profile.png"
               alt="Sepehr Jokanian — full-stack developer, Yerevan"
               loading="lazy"
               className="mb-6 aspect-[4/5] w-full rounded-lg border border-[var(--border)] object-cover grayscale transition-all duration-500 hover:grayscale-0"

@@ -4,8 +4,8 @@ compatibility_flags = ["nodejs_compat"]
 
 [[d1_databases]]
 binding = "DB"
-database_name = "portfolio-db"
-database_id = "YOUR_DATABASE_ID"
+database_name = "sep-web-db"
+database_id = "bf6751de-b907-48cc-88bf-2138e22104ec"
 
 [[kv_namespaces]]
 binding = "RATE_LIMIT"
